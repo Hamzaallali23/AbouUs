@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant | About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        
+        body {
+            background-color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: top right;
+            padding: 20px 0;
+            height: max-content;
+            font-weight: 100;
+           
+
+      
+        }
+        
+        .logo {
+            height: 50px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+            position: relative;
+          
+        }
+        
+        nav ul li a:hover {
+            color: #000;
+         
+        }
+        
+        nav ul li a.active {
+            font-weight: bold;
+        }
+        
+        nav ul li a.active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            bottom: -5px;
+            left: 0;
+        }
+        
+        .main-content {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .content-container {
+            display: flex;
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 0 0 40%;
+            height: 500px;
+            overflow: hidden;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .about-text {
+            flex: 0 0 60%;
+            padding: 0 40px;
+        }
+     
+        
+        .about-title {
+            font-size: 72px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            background: linear-gradient(90deg, #aca9a6, #020202); 
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: white;
+            position: relative;
+            left: -200px;
+           
+        }
+        
+        .about-description p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+            margin-bottom: 20px;
+        }
+        
+       
+        
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <header>
+            <div class="logo-container">
+                <img src="favicon.svg" alt="restaurant" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">About us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+       
+        <main class="main-content">
+           
+            
+            <div class="content-container">
+                <div class="about-image">
+                    <img src="restaurant pic.jpeg" >
+                </div>
+                
+                <div class="about-text">
+                    <h1 class="about-title">ABOUT US</h1>
+                    
+                    <div class="about-description">
+                        <p>
+                          We bring luxury dining to your fingertips with effortless online reservations and ordering. Enjoy gourmet meals crafted by top chefs using the finest ingredients-all available for quick booking through our easy-to-use platform. Whether you're planning a special occasion or a business lunch, secure your table in just a few clicks and focus on savoring the experience.
+                        </p>
+                        <p>
+                          Beyond the food, we provide personalized touches with bespoke menus tailored to diners' preferences. Attention to detail extends to every aspect, including artfully plated dishes and a tranquil setting. Whether for a romantic date or an exclusive gathering, we transform meals into memorable experiences, blending culinary artistry with unmatched hospitality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    
+    </div>
+</body>
+</html>
